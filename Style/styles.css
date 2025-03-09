@@ -16,6 +16,7 @@
     --snd-bg-color: #14213d;
     --text-color: #fca311;
     --main-color: #e5e5e5;
+    --box-bg-color: #0000004b ;
 }
 
 html {
@@ -252,10 +253,152 @@ span {
 }
 
 .about-content p {
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin: 2rem 0 3rem;
 }
+#readMoreBtn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
 
+#readMoreBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the Achievement Badge */
+.badge {
+    display: inline-block;
+    margin-left: 10px; /* Space between button and badge */
+    position: relative;
+    top: 15px; /* Adjust position vertically to align with the button */
+}
+
+.badge img {
+    width: 100px; /* Set a width for the badge image */
+    height: 100px; /* Maintain the aspect ratio of the image */
+    border-radius: 50%; /* Make the image circular if it's a round badge */
+}
+
+/* Optional hover effect for the badge image */
+.badge img:hover {
+    opacity: 0.8; /* Change opacity when hovering */
+}
+
+
+/*Education*/
+
+
+.Educations-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns for side-by-side */
+    gap: 2rem;
+    justify-content: center;
+    align-items: start;
+}
+
+.Educations-container .Educations-box {
+    padding: 3rem 2rem 4rem;
+    background: var(--snd-bg-color);
+    border-radius: 8rem;
+    text-align: center;
+    border: .5rem solid var(--bg-color);
+    transition: .5s ease;
+}
+
+.aligned-text {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.aligned-text p {
+    margin-top: 10px;
+}
+
+.Educations-container .Educations-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+.Educations-box i {
+    font-size: 7rem;
+    color: var(--main-color);
+}
+
+.Educations-box h3 {
+    font-size: 2.6rem;
+}
+
+.Educations-box p {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+
+ul {
+    list-style-position: inside; /* Ensures the bullet is closer to the text */
+    font-size: 1.6rem;
+    padding: 0; /* Remove padding from the list */
+    margin: 0; /* Remove margin from the list */
+  }
+  
+li {
+    margin-left: 0; /* Remove any left margin for list items */
+    padding-left: 10px; /* Optional: Adds slight space between the bullet and text */
+    margin-bottom: 0.8rem;
+  }
+
+/* Assign Master's degree to the left column */
+.Educations-container .master-degree {
+    grid-column: 1;
+}
+
+/* Assign Bachelor's degree to the right column */
+.Educations-container .bachelor-degree {
+    grid-column: 2;
+}
+
+
+.stack-list {
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 0px;
+    background: #0c0667;
+    border: 1px solid #1b2678;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.stack-list h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #444;
+}
+.stack-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.stack-list ul li {
+    background: #e7f3fe;
+    margin: 10px 0;
+    margin-left: 0; /* Remove any left margin for list items */
+    padding-left: 10px
+    padding:10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #2c3e50;
+    border: 1px solid #c1d8f1;
+}
+/*Experience or Service*/
+
+.services {
+    background: var(--snd-bg-color);
+}
 .services h2 {
     margin-bottom: 5rem;
 }
@@ -263,22 +406,23 @@ span {
 .services-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
     flex-wrap: wrap;
     gap: 2rem;
 }
 
+
 .services-container .services-box {
     flex: 1 1 30rem;
-    background: var(--snd-bg-color);
+    background: var(--box-bg-color);
+    grid-template-columns: 1fr;
     padding: 3rem 2rem 4rem;
     border-radius: 8rem;
+    border: .5rem ;
     text-align: center;
-    border: .2rem solid var(--bg-color);
     transition: .5s ease;
 }
-
-
 .aligned-text {
     text-align: left;
     padding-left: 20px; /* Adjust for your preferred spacing */
@@ -287,9 +431,8 @@ span {
     margin-top: 10px; /* Spacing between paragraphs */
 }
 
-
 .services-container .services-box:hover {
-    border-color: var(--main-color);
+    border: 5px solid var(--main-color); /* Added border style and width */
     transform: scale(1.02);
 }
 
@@ -306,10 +449,9 @@ span {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
-
-
+/* portfolio & project*/
 .portfolio {
-    background: var(--snd-bg-color);
+    background: var(--bg-color);
 }
 
 .portfolio h2 {
@@ -318,17 +460,32 @@ span {
 
 .portfolio-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     align-items: center;
-    gap: 2.5rem;
+    gap: 1.5rem;
 }
 
 .portfolio-container .portfolio-box {
+    padding:0.05;
+    max-width: 1800px;
+    height: 220px;
     position: relative;
-    border-radius: 2rem;
-    box-shadow: 0 0 1rem var(--bg-color);
+    border-radius: 5rem;
+    box-shadow: 0 0 0.5rem var(--bg-color);
     overflow: hidden;
     display: flex;
+}
+
+.portfolio-background {
+    position: relative;
+    top: 1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover; /* Ensure the image covers the entire div */
+    background-position: center; /* Center the image within the div */
+    filter: blur(15px); /* Apply blur effect */
+    z-index: -1; /* Ensure the background is behind the text */
 }
 
 .portfolio-box img {
@@ -337,8 +494,9 @@ span {
     opacity: 0.7;
 }
 
-.portfolio-box:hover img {
-    transform: scale(1.2);
+.portfolio-box:hover  {
+    border: 2px solid #ffffff;
+    transform: scale(1.02);
 }
 
 .portfolio-box .portfolio-layer {
@@ -347,30 +505,41 @@ span {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    background: linear-gradient(rgba(0, 0, 0, 0), var(--snd-bg-color));*/
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 10px 15 px;
-    transform: translateY(100%);
-    transition: .5s ease;
-    
-}
-
-
-.portfolio-box:hover .portfolio-layer {
+    padding: 10px 15px; /* Fixed typo */
     transform: translateY(0);
 }
 
-.portfolio-layer h4{
+/* Keep text always visible */
+.portfolio-layer h4,
+.portfolio-layer p,
+.portfolio-layer a {
+    opacity: 1; /* Ensure text is always visible */
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Hover effect only on the background */
+
+
+.portfolio-box:hover .portfolio-layer {
+    transform: translateY(1em); /* Moves up on hover */
+}
+
+.portfolio-layer h4 {
     font-size: 3rem;
 }
 
 .portfolio-layer p {
-    font-size: 1.6rem;
-    margin: .3rem 0 1rem;
+    font-size: 1.8rem;  /* Increase font size */
+    font-weight: 500;   /* Make text slightly bold */
+    line-height: 1.6;   /* Increase line spacing for readability */
+    color: white;       /* Ensure good contrast */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.01); /* Adds subtle text shadow for better visibility */
 }
 
 .portfolio-layer a {
@@ -379,9 +548,10 @@ span {
     align-items: center;
     width: 5rem;
     height: 5rem;
-    background: var(--text-color);
+    background: var(--main-color);
     border-radius: 50%;
 }
+
 
 .portfolio-layer a i {
     font-size: 2rem;
@@ -395,12 +565,9 @@ span {
 }
 
 .info-button:hover {
-    background-color: #007bff; /* Blue background on hover */
+    background-color: #2e5681; /* Blue background on hover */
     color: #ffffff; /* White text on hover */
 }
-
-
-
 
 .contact h2 {
     margin-bottom: 3rem;
@@ -631,3 +798,4 @@ span {
     transform: scale(1.4);
     transition: transform 0.3s ease-in-out;
   }
+  
