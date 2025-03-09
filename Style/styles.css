@@ -272,33 +272,22 @@ span {
 }
 
 /* Style for the Achievement Badge */
-./* Style for the individual badge */
 .badge {
     display: inline-block;
-    margin-left: 10px; /* Space between badges */
+    margin-left: 10px; /* Space between button and badge */
     position: relative;
-    top: 0; /* Adjust top positioning to align better */
-    text-align: center; /* Center the text below the image */
+    top: 15px; /* Adjust position vertically to align with the button */
 }
 
-/* Style for the badge image */
 .badge img {
-    width: 80px; /* Adjust the size of the badge image */
-    height: 80px; /* Maintain the aspect ratio */
-    border-radius: 50%; /* Make the badge image circular */
-    object-fit: cover; /* Ensure the image is contained within the circular badge */
+    width: 100px; /* Set a width for the badge image */
+    height: 100px; /* Maintain the aspect ratio of the image */
+    border-radius: 50%; /* Make the image circular if it's a round badge */
 }
 
 /* Optional hover effect for the badge image */
 .badge img:hover {
     opacity: 0.8; /* Change opacity when hovering */
-}
-
-/* Style for the text under the badge */
-.badge p {
-    font-size: 0.9rem; /* Adjust the font size */
-    color: #333; /* Set the text color */
-    margin-top: 5px; /* Space between image and text */
 }
 
 
@@ -406,10 +395,6 @@ li {
     border: 1px solid #c1d8f1;
 }
 /*Experience or Service*/
-
-.services {
-    background: var(--snd-bg-color);
-}
 .services h2 {
     margin-bottom: 5rem;
 }
@@ -426,7 +411,7 @@ li {
 
 .services-container .services-box {
     flex: 1 1 30rem;
-    background: var(--box-bg-color);
+    background: var(--snd-bg-color);
     grid-template-columns: 1fr;
     padding: 3rem 2rem 4rem;
     border-radius: 8rem;
