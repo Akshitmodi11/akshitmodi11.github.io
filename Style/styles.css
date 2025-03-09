@@ -16,10 +16,7 @@
     --snd-bg-color: #14213d;
     --text-color: #fca311;
     --main-color: #e5e5e5;
-<<<<<<< HEAD
     --box-bg-color: #0000004b ;
-=======
->>>>>>> 0a5eea5755680958568ab4992a395a890e3508bb
 }
 
 html {
@@ -256,7 +253,6 @@ span {
 }
 
 .about-content p {
-<<<<<<< HEAD
     font-size: 2rem;
     margin: 2rem 0 3rem;
 }
@@ -276,22 +272,33 @@ span {
 }
 
 /* Style for the Achievement Badge */
+./* Style for the individual badge */
 .badge {
     display: inline-block;
-    margin-left: 10px; /* Space between button and badge */
+    margin-left: 10px; /* Space between badges */
     position: relative;
-    top: 15px; /* Adjust position vertically to align with the button */
+    top: 0; /* Adjust top positioning to align better */
+    text-align: center; /* Center the text below the image */
 }
 
+/* Style for the badge image */
 .badge img {
-    width: 100px; /* Set a width for the badge image */
-    height: 100px; /* Maintain the aspect ratio of the image */
-    border-radius: 50%; /* Make the image circular if it's a round badge */
+    width: 80px; /* Adjust the size of the badge image */
+    height: 80px; /* Maintain the aspect ratio */
+    border-radius: 50%; /* Make the badge image circular */
+    object-fit: cover; /* Ensure the image is contained within the circular badge */
 }
 
 /* Optional hover effect for the badge image */
 .badge img:hover {
     opacity: 0.8; /* Change opacity when hovering */
+}
+
+/* Style for the text under the badge */
+.badge p {
+    font-size: 0.9rem; /* Adjust the font size */
+    color: #333; /* Set the text color */
+    margin-top: 5px; /* Space between image and text */
 }
 
 
@@ -403,12 +410,6 @@ li {
 .services {
     background: var(--snd-bg-color);
 }
-=======
-    font-size: 1.6rem;
-    margin: 2rem 0 3rem;
-}
-
->>>>>>> 0a5eea5755680958568ab4992a395a890e3508bb
 .services h2 {
     margin-bottom: 5rem;
 }
@@ -416,17 +417,12 @@ li {
 .services-container {
     display: flex;
     justify-content: center;
-<<<<<<< HEAD
     grid-template-columns: 1fr 1fr;
     align-items: start;
-=======
-    align-items: center;
->>>>>>> 0a5eea5755680958568ab4992a395a890e3508bb
     flex-wrap: wrap;
     gap: 2rem;
 }
 
-<<<<<<< HEAD
 
 .services-container .services-box {
     flex: 1 1 30rem;
@@ -438,19 +434,6 @@ li {
     text-align: center;
     transition: .5s ease;
 }
-=======
-.services-container .services-box {
-    flex: 1 1 30rem;
-    background: var(--snd-bg-color);
-    padding: 3rem 2rem 4rem;
-    border-radius: 8rem;
-    text-align: center;
-    border: .2rem solid var(--bg-color);
-    transition: .5s ease;
-}
-
-
->>>>>>> 0a5eea5755680958568ab4992a395a890e3508bb
 .aligned-text {
     text-align: left;
     padding-left: 20px; /* Adjust for your preferred spacing */
@@ -459,14 +442,8 @@ li {
     margin-top: 10px; /* Spacing between paragraphs */
 }
 
-<<<<<<< HEAD
 .services-container .services-box:hover {
     border: 5px solid var(--main-color); /* Added border style and width */
-=======
-
-.services-container .services-box:hover {
-    border-color: var(--main-color);
->>>>>>> 0a5eea5755680958568ab4992a395a890e3508bb
     transform: scale(1.02);
 }
 
@@ -483,16 +460,9 @@ li {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
-<<<<<<< HEAD
 /* portfolio & project*/
 .portfolio {
     background: var(--bg-color);
-=======
-
-
-.portfolio {
-    background: var(--snd-bg-color);
->>>>>>> 0a5eea5755680958568ab4992a395a890e3508bb
 }
 
 .portfolio h2 {
@@ -501,7 +471,6 @@ li {
 
 .portfolio-container {
     display: grid;
-<<<<<<< HEAD
     grid-template-columns: 1fr;
     align-items: center;
     gap: 1.5rem;
@@ -514,22 +483,10 @@ li {
     position: relative;
     border-radius: 5rem;
     box-shadow: 0 0 0.5rem var(--bg-color);
-=======
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    gap: 2.5rem;
-}
-
-.portfolio-container .portfolio-box {
-    position: relative;
-    border-radius: 2rem;
-    box-shadow: 0 0 1rem var(--bg-color);
->>>>>>> 0a5eea5755680958568ab4992a395a890e3508bb
     overflow: hidden;
     display: flex;
 }
 
-<<<<<<< HEAD
 .portfolio-background {
     position: relative;
     top: 1;
@@ -542,22 +499,15 @@ li {
     z-index: -1; /* Ensure the background is behind the text */
 }
 
-=======
->>>>>>> 0a5eea5755680958568ab4992a395a890e3508bb
 .portfolio-box img {
     width: 100%;
     transition: .5s ease;
     opacity: 0.7;
 }
 
-<<<<<<< HEAD
 .portfolio-box:hover  {
     border: 2px solid #ffffff;
     transform: scale(1.02);
-=======
-.portfolio-box:hover img {
-    transform: scale(1.2);
->>>>>>> 0a5eea5755680958568ab4992a395a890e3508bb
 }
 
 .portfolio-box .portfolio-layer {
@@ -566,17 +516,12 @@ li {
     left: 0;
     width: 100%;
     height: 100%;
-<<<<<<< HEAD
     background: linear-gradient(rgba(0, 0, 0, 0), var(--snd-bg-color));*/
-=======
-    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
->>>>>>> 0a5eea5755680958568ab4992a395a890e3508bb
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-<<<<<<< HEAD
     padding: 10px 15px; /* Fixed typo */
     transform: translateY(0);
 }
@@ -597,34 +542,15 @@ li {
 }
 
 .portfolio-layer h4 {
-=======
-    padding: 10px 15 px;
-    transform: translateY(100%);
-    transition: .5s ease;
-    
-}
-
-
-.portfolio-box:hover .portfolio-layer {
-    transform: translateY(0);
-}
-
-.portfolio-layer h4{
->>>>>>> 0a5eea5755680958568ab4992a395a890e3508bb
     font-size: 3rem;
 }
 
 .portfolio-layer p {
-<<<<<<< HEAD
     font-size: 1.8rem;  /* Increase font size */
     font-weight: 500;   /* Make text slightly bold */
     line-height: 1.6;   /* Increase line spacing for readability */
     color: white;       /* Ensure good contrast */
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.01); /* Adds subtle text shadow for better visibility */
-=======
-    font-size: 1.6rem;
-    margin: .3rem 0 1rem;
->>>>>>> 0a5eea5755680958568ab4992a395a890e3508bb
 }
 
 .portfolio-layer a {
@@ -633,18 +559,11 @@ li {
     align-items: center;
     width: 5rem;
     height: 5rem;
-<<<<<<< HEAD
     background: var(--main-color);
     border-radius: 50%;
 }
 
 
-=======
-    background: var(--text-color);
-    border-radius: 50%;
-}
-
->>>>>>> 0a5eea5755680958568ab4992a395a890e3508bb
 .portfolio-layer a i {
     font-size: 2rem;
     color: var(--snd-bg-color);
@@ -657,20 +576,10 @@ li {
 }
 
 .info-button:hover {
-<<<<<<< HEAD
     background-color: #2e5681; /* Blue background on hover */
     color: #ffffff; /* White text on hover */
 }
 
-=======
-    background-color: #007bff; /* Blue background on hover */
-    color: #ffffff; /* White text on hover */
-}
-
-
-
-
->>>>>>> 0a5eea5755680958568ab4992a395a890e3508bb
 .contact h2 {
     margin-bottom: 3rem;
 }
@@ -900,105 +809,4 @@ li {
     transform: scale(1.4);
     transition: transform 0.3s ease-in-out;
   }
-<<<<<<< HEAD
   
-=======
- /* For mobile devices */
-@media (max-width: 768px) {
-    /* Header */
-    .header {
-        display: none;
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background: #333; /* Adjust background color */
-        flex-direction: column;
-        text-align: center;
-        padding: 15px 0;
-    }
-    .navbar.show {
-        display: flex;
-
-    .navbar {
-        display: none; /* Hide navbar by default */
-    }
-
-    #menu-icon {
-        display: block; /* Show menu icon on mobile */
-        font-size: 1.5em;
-    }
-
-    /* Display navbar when #menu-icon is clicked (using JavaScript) */
-    .navbar.show {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    #menu-icon {
-        display: block;
-        position: fixed;
-        left: 15px;
-        bottom: 15px;
-        font-size: 1.8em;
-        color: #fff;
-        cursor: pointer;
-        z-index: 10;
-    }
-
-    /* Home Section */
-    .home-content h1 {
-        font-size: 1.5em;
-        text-align: center;
-    }
-
-    .home-content h3 {
-        font-size: 1.2em;
-    }
-
-    .social-media a {
-        font-size: 1.2em;
-        margin: 5px;
-    }
-
-    /* About Section */
-    .about-img img,
-    .home-img img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .about-content,
-    .services-container,
-    .portfolio-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* Services (Experience) Section */
-    .services-box {
-        width: 100%;
-        padding: 15px;
-        text-align: center;
-    }
-
-    /* Footer */
-    #footer {
-        text-align: center;
-    }
-
-    #footer .social-media a {
-        margin: 0 10px;
-    }
-}
-
-/* Smaller screens */
-@media (max-width: 480px) {
-    /* Adjust font sizes for small screens */
-    .home-content h1,
-    .about-content h2,
-    .services h2 {
-        font-size: 1.2em;
-    }
-}
->>>>>>> 0a5eea5755680958568ab4992a395a890e3508bb
