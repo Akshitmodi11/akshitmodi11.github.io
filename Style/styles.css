@@ -689,7 +689,7 @@ li {
         width: 50vw;  /* Adjust the value to make the image smaller on smaller screens */
         margin-right: 0px;
         margin-left:0px;  /* Adjust the margin to fit the smaller screen */
-        margin-top: 5px;  /* Adjust the margin-top for better positioning on small screens */
+        margin-top: 0px;  /* Adjust the margin-top for better positioning on small screens */
         margin-bottom: -55px;
     }
 }
@@ -726,7 +726,7 @@ li {
 
     .home-img img {
         width: 50vw;
-        margin-top: 5px;
+        margin-top: 0px;
     }
 
     .about-img img{
