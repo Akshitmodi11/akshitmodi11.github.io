@@ -432,11 +432,11 @@ li {
 .portfolio-container .portfolio-box {
     padding:0.05;
     max-width: 1800px;
-    height: 220px;
+    height: 252px;
     position: relative;
     border-radius: 5rem;
     box-shadow: 0 0 0.5rem var(--bg-color);
-    overflow: hidden;
+    overflow: auto;;
     display: flex;
 }
 
@@ -689,8 +689,8 @@ li {
         width: 50vw;  /* Adjust the value to make the image smaller on smaller screens */
         margin-right: 0px;
         margin-left:0px;  /* Adjust the margin to fit the smaller screen */
-        margin-top: 10px;  /* Adjust the margin-top for better positioning on small screens */
-        margin-bottom: -195px;
+        margin-top: 5px;  /* Adjust the margin-top for better positioning on small screens */
+        margin-bottom: -55px;
     }
 }
 
@@ -710,9 +710,12 @@ li {
     .portfolio h2 {
         margin-bottom: 3rem;
     }
+    .portfolio-container .portfolio-box {
+        overflow: auto;  /* Adjust height to 350px on smaller screens */
+
 
     .portfolio-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -723,12 +726,12 @@ li {
 
     .home-img img {
         width: 80vw;
-        margin-top: 12rem;
+        margin-top: 5px;
     }
 
     .about-img img{
         width: 100vw;
-        margin-top: 4rem;
+        margin-top: 10px;
     }
 }
 
