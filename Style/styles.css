@@ -103,7 +103,7 @@ span {
 }
 
 .home-img img{
-    width: 80vw;
+    width: 30vw;
     animation: floatImage 4s ease-in-out infinite;
     margin-top: -120px;  /* Adjust the value to move the image upwards and it is main image */
     margin-left: 130px;  /* Adjust the value to move the image to the right */
