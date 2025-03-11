@@ -8,7 +8,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito', sans-serif;f
 }
 
 :root {
@@ -75,6 +75,7 @@ section {
     color: var(--text-color);
     display: none;
 }
+
 
 .home {
     display: flex;
@@ -184,42 +185,6 @@ span {
 .btn:hover {
     box-shadow: none;
 }
-
-/* Footer styling */
-#footer {
-    background-color: #333;       /* Background color */
-    color: #fff;                  /* Text color */
-    text-align: center;           /* Center-align all text */
-    padding: 2rem 0;              /* Spacing around the footer */
-    font-family: Arial, sans-serif;
-}
-
-#footer .centered-text {
-    margin: 0.5rem 0;             /* Spacing between elements */
-    font-size: 1rem;              /* Adjust font size */
-}
-
-#footer .social {
-    margin: 1rem 0;               /* Space around social media icons */
-}
-
-#footer .social a {
-    color: #fff;                  /* Icon color */
-    margin: 0 0.5rem;             /* Space between icons */
-    font-size: 1.5rem;            /* Icon size */
-    transition: color 0.3s ease;  /* Smooth transition for hover */
-}
-
-#footer .social a:hover {
-    color: #0073b1;               /* Hover color (adjust as desired) */
-}
-
-#footer .copyright {
-    font-size: 0.9rem;
-    margin-top: 1rem;
-    opacity: 0.8;                 /* Makes text slightly lighter */
-}
-
 
 .about {
     display: flex;
@@ -395,6 +360,9 @@ li {
     border: 1px solid #c1d8f1;
 }
 /*Experience or Service*/
+.services { 
+    background: var(--snd-bg-color);
+}
 .services h2 {
     margin-bottom: 5rem;
 }
@@ -411,7 +379,7 @@ li {
 
 .services-container .services-box {
     flex: 1 1 30rem;
-    background: var(--snd-bg-color);
+    background: var(--box-bg-color);
     grid-template-columns: 1fr;
     padding: 3rem 2rem 4rem;
     border-radius: 8rem;
@@ -606,38 +574,42 @@ li {
     cursor: pointer;
 }
 
-
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 2rem 9%;
-    background: var(--snd-bg-color);
+/* Footer styling */
+#footer {
+    background-color: #333;       /* Background color */
+    color: #fff;                  /* Text color */
+    text-align: center;           /* Center-align all text */
+    padding: 2rem 0;              /* Spacing around the footer */
+    font-family: Arial, sans-serif;
 }
 
-.footer-text {
-    font-size: 1.6rem;
+#footer .centered-text {
+    margin: 0.5rem 0;             /* Spacing between elements */
+    font-size: 1rem;              /* Adjust font size */
 }
 
-.footer-iconTop a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: .8rem 1rem;
-    background: var(--main-color);
-    border-radius: .8rem;
-    transition: .5s ease;
+#footer .social {
+    margin: 1rem 0;               /* Space around social media icons */
 }
 
-.footer-iconTop a:hover {
-    box-shadow: 0 0 1rem var(--main-color);
+#footer .social a {
+    color: #fff;                  /* Icon color */
+    margin: 0 0.5rem;             /* Space between icons */
+    font-size: 1.5rem;            /* Icon size */
+    transition: color 0.3s ease;  /* Smooth transition for hover */
 }
 
-.footer-iconTop a i {
-    font-size: 2.4rem;
-    color: var(--snd-bg-color);
+#footer .social a:hover {
+    color: #0073b1;               /* Hover color (adjust as desired) */
 }
+
+#footer .copyright {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    opacity: 0.8;                 /* Makes text slightly lighter */
+}
+
+
 
 
 /*BREAKPOINT*/
@@ -714,9 +686,11 @@ li {
     }
 
     .home-img img {
-        width: 70vw;
-        margin-top: 4rem;
+        width: 50vw;  /* Adjust the value to make the image smaller on smaller screens */
+        margin-left: 20px;  /* Adjust the margin to fit the smaller screen */
+        margin-top: -60px;  /* Adjust the margin-top for better positioning on small screens */
     }
+}
 
     .about {
         flex-direction: column-reverse;
