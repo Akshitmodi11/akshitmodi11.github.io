@@ -190,17 +190,13 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1.6rem;
     background: var(--snd-bg-color);
-}
-.responsive-img {
-    width: 50%;          /* Make the image take the full width of its container */
-    max-width: 350px;     /* Adjust max width to prevent it from getting too large */
-    height: auto;         /* Maintain aspect ratio */
 }
 
 .about-img img {
-    width: 35vw;
+    alignment:auto;
+    width: 20vw;
 }
 
 .heading {
@@ -219,7 +215,7 @@ span {
 
 .about-content p {
     font-size: 2rem;
-    margin: 2rem 0 3rem;
+    margin: 1.6rem 0 3rem;
 }
 #readMoreBtn {
     background-color: #007bff;
@@ -235,13 +231,16 @@ span {
 #readMoreBtn:hover {
     background-color: #0056b3;
 }
+.skills{
+    color:var(--main-color);
+}
 
 /* Style for the Achievement Badge */
 .badge {
     display: inline-block;
-    margin-left: 10px; /* Space between button and badge */
+    margin-left: 5px; /* Space between button and badge */
     position: relative;
-    top: 15px; /* Adjust position vertically to align with the button */
+    top: 10px; /* Adjust position vertically to align with the button */
 }
 
 .badge img {
@@ -690,9 +689,8 @@ li {
         margin-right: 0px;
         margin-left:0px;  /* Adjust the margin to fit the smaller screen */
         margin-top: 0px;  /* Adjust the margin-top for better positioning on small screens */
-        margin-bottom: -55px;
+        margin-bottom: 55px;
     }
-}
 
     .about {
         flex-direction: column-reverse;
@@ -701,6 +699,10 @@ li {
     .about-img img{
         width: 90vw;
         margin-top: 4rem;
+    }
+    .about-content p {
+        font-size: 2rem;
+        margin: 1.6rem 0 3rem;
     }
 
     .services h2 {
@@ -712,6 +714,7 @@ li {
     }
     .portfolio-container .portfolio-box {
         overflow: auto;  /* Adjust height to 350px on smaller screens */
+    }
 
 
     .portfolio-container {
@@ -725,13 +728,13 @@ li {
     }
 
     .home-img img {
-        width: 50vw;
+        width: 35vw;
         margin-top: 0px;
     }
 
     .about-img img{
-        width: 100vw;
-        margin-top: 10px;
+        width:35vw;
+        margin-top: 4rem;
     }
 }
 
