@@ -1,42 +1,14 @@
-function toggleContent1() {
-    var content = document.getElementById("more-content1");
-    var button = document.querySelector(".btn");
-
-    if (content.style.display === "none") {
-        content.style.display = "block";
-        button.textContent = "Read Less";
+function toggleContent(contentId, button) {
+    var content = document.getElementById(contentId);
+    if (content.style.display === "none" || content.style.display === "") {
+      content.style.display = "block";
+      button.textContent = "Read Less";
     } else {
-        content.style.display = "none";
-        button.textContent = "Read More";
+      content.style.display = "none";
+      button.textContent = "Read More";
     }
-}
-
-function toggleContent2() {
-    var content = document.getElementById("more-content2");
-    var button = document.querySelector(".btn");
-
-    if (content.style.display === "none") {
-        content.style.display = "block";
-        button.textContent = "Read Less";
-    } else {
-        content.style.display = "none";
-        button.textContent = "Read More";
-    }
-}
-
-function toggleContent() {
-    var content = document.getElementById("more-content");
-    var button = document.querySelector(".btn");
-
-    if (content.style.display === "none") {
-        content.style.display = "block";
-        button.textContent = "Read Less";
-    } else {
-        content.style.display = "none";
-        button.textContent = "Read More";
-    }
-}
-
+  }
+  
 function toggleContent_project1() {
     var content = document.getElementById("more-content4");
     var button = document.querySelector(".btn");
@@ -62,3 +34,24 @@ function toggleParagraph() {
         button.innerHTML = "Read More"; // Change button text when hidden
     }
 }
+function toggleExclusive(contentId, button) {
+    const allContents = document.querySelectorAll("[id^='more-content']");
+    const allButtons = document.querySelectorAll(".timeline-content .btn");
+  
+    allContents.forEach(content => {
+      if (content.id !== contentId) {
+        content.style.display = "none";
+      }
+    });
+  
+    allButtons.forEach(btn => {
+      if (btn !== button) {
+        btn.textContent = "Read More";
+      }
+    });
+  
+    const content = document.getElementById(contentId);
+    const isVisible = content.style.display === "block";
+    content.style.display = isVisible ? "none" : "block";
+    button.textContent = isVisible ? "Read More" : "Read Less";
+  }
