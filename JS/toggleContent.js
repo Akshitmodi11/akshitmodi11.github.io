@@ -35,23 +35,23 @@ function toggleParagraph() {
     }
 }
 function toggleExclusive(contentId, button) {
-    const allContents = document.querySelectorAll("[id^='more-content']");
-    const allButtons = document.querySelectorAll(".timeline-content .btn");
-  
-    allContents.forEach(content => {
-      if (content.id !== contentId) {
-        content.style.display = "none";
-      }
-    });
-  
-    allButtons.forEach(btn => {
-      if (btn !== button) {
-        btn.textContent = "Read More";
-      }
-    });
-  
-    const content = document.getElementById(contentId);
-    const isVisible = content.style.display === "block";
-    content.style.display = isVisible ? "none" : "block";
-    button.textContent = isVisible ? "Read More" : "Read Less";
-  }
+  const allContents = document.querySelectorAll("[id^='more-content']");
+  const allButtons = document.querySelectorAll(".timeline-content .btn");
+
+  allContents.forEach(content => {
+    if (content.id !== contentId) {
+      content.style.display = "none";
+    }
+  });
+
+  allButtons.forEach(btn => {
+    if (btn !== button) {
+      btn.textContent = "Read More";
+    }
+  });
+
+  const content = document.getElementById(contentId);
+  const isVisible = content.style.display === "block";
+  content.style.display = isVisible ? "none" : "block";
+  button.textContent = isVisible ? "Read More" : "Read Less";
+}
