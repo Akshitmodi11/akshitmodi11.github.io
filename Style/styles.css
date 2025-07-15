@@ -915,7 +915,7 @@ li {
   }
 
 
-  
+  .timeline-content {  
     width: 90%;                    /* New width */
     background: linear-gradient(135deg, rgba(20, 33, 61, 0.9), rgba(0, 0, 0, 0.7));
     padding: 1rem 2rem;
